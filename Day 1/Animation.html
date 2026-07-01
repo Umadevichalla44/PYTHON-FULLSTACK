@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <style>
+      img {
+        width: 150px;
+        height: auto;
+      }
+      #Car {
+        animation: startCar;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+      }
+      @keyframes startCar {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(1100px) rotate(0deg);
+        }
+        100% {
+          transform: translateX(0px) rotate(360deg);
+        }
+      }
+
+      #Train {
+        animation: startTrain;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-direction: backwards;
+      }
+      @keyframes startTrain {
+        0% {
+          transform: translateX(0px);
+        }
+        50% {
+          transform: translateX(1200px);
+        }
+        100% {
+          transform: translateX(0px);
+        }
+      }
+
+      #Bus {
+        animation: startBus;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in;
+        animation-iteration-count: 1;
+        animation-fill-mode: backwards;
+      }
+      @keyframes startBus {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1100px);
+        }
+      }
+      #Cycle {
+        animation: startCycle;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-out;
+        animation-iteration-count: 5;
+      }
+      @keyframes startCycle {
+        from {
+          transform: translateX(0px) rotate(0deg);
+        }
+        to {
+          transform: translateX(1100px) rotate(360deg);
+        }
+      }
+      #Ship {
+        animation: startship;
+        animation-duration: 10s;
+        animation-delay: 0s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+
+      #Ship:hover {
+        animation-play-state: paused;
+      }
+      @keyframes startship {
+        from {
+          transform: translateX(0px);
+        }
+        to {
+          transform: translateX(1100px);
+        }
+      }
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <img id="Car" src="car.png" alt="error loading image" /><br /><br />
+    <img id="Train" src="Train.png" alt="error" /><br /><br />
+
+    <img id="Bus" src="Bus.png" alt="error" /><br /><br />
+    <img id="Cycle" src="cycle.png" alt="error" /><br /><br />
+    <img id="Ship" src="ship.png" alt="error" />
+  </body>
+</html>
