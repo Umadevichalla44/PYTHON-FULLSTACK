@@ -1,0 +1,51 @@
+body {
+        background-image: linear-gradient(to right, yellow, orange);
+      }
+
+      .form-area {
+        height: 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      form {
+        background-color: white;
+        width: 350px;
+        height: 400px;
+        padding: 30px;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+      }
+      form > h2 {
+        text-align: center;
+        text-decoration: underline;
+        font-weight: bolder;
+      }
+      form > input {
+        height: 30px;
+        border: 2px solid black;
+        border-radius: 10px;
+      }
+      .submit-buttons {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      button {
+        margin-top: 10px;
+        width: 120px;
+        height: 40px;
+        background-color: hotpink;
+        border-radius: 10px;
+        border: none;
+        font-weight: bold;
+        font-size: 15px;
+      }
+
+      button:hover {
+        background-color: purple;
+        color: white;
+      }
