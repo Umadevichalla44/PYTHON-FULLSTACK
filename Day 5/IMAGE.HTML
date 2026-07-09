@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      .navigation-section {
+        height: 10vh;
+        background-color: aqua;
+        display: grid;
+        grid-template-columns: 4fr 1fr 1fr 1fr 1fr 1fr;
+        justify-content: center;
+        align-items: center;
+      }
+      .logo {
+        height: 100%;
+        background-color: rgb(46, 218, 46);
+        display: flex;
+        align-items: center;
+        justify-content: start;
+      }
+      .quicklinks {
+        background-color: grey;
+        height: 100%;
+        border: 1px solid black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-section {
+        width: 100vw;
+        height: 85vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .hero-section > .image-part {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-section > .text-part {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hero-section > .image-part > img {
+        width: 30vw;
+        border-radius: 20px;
+      }
+
+      .hero-section > .text-part > h1 {
+        color: red;
+        font-size: 10vw;
+      }
+
+      .hero-section > .text-part > p {
+        text-align: justify;
+        width: 20vw;
+        font-size: 2vw;
+      }
+
+      @media (max-width: 400px) {
+        .navigation-section {
+          height: 50vh;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .hero-section {
+          margin-top: 20px;
+          display: grid;
+          grid-template-columns: 1fr;
+        }
+
+        .hero-section > .image-part > img {
+          width: 70vw;
+          height: 35vh;
+          border-radius: 10px;
+        }
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .hero-section > .text-part > h1 {
+          color: red;
+          font-size: 20vw;
+        }
+
+        .hero-section > .text-part > p {
+          text-align: justify;
+          width: 90vw;
+          font-size: 4vw;
+        }
+      }
+      .cards{
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+
+}
+
+.card{
+
+width:320px;
+background:white;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 0 10px gray;
+transition:.5s;
+
+}
+card:hover{
+
+transform:scale(1.05);
+
+}
+
+.card img{
+
+width:100%;
+height:220px;
+object-fit:cover;
+
+}
+
+.card h3{
+
+padding:15px;
+
+}
+
+.card p{
+
+padding:0 15px 20px;
+
+}
+    </style>
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- this is navigation section -->
+    <div class="navigation-section">
+      <div class="logo"><h1>LOGO</h1></div>
+      <div class="quicklinks child1"><h3>Home</h3></div>
+      <div class="quicklinks child2"><h3>About</h3></div>
+      <div class="quicklinks child3"><h3>Career</h3></div>
+      <div class="quicklinks child4"><h3>Services</h3></div>
+      <div class="quicklinks child5"><h3>Help</h3></div>
+    </div>
+    <!--  this is hero section -->
+    <div class="hero-section">
+      <div class="image-part">
+        <img src="nature.jpg" alt="ERROR" />
+      </div>
+      <div class="text-part">
+        <h1>NATURE</h1>
+        <br />
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+          illo veritatis nemo consequuntur nulla sapiente optio recusandae quis
+          voluptas, illum hic neque facilis blanditiis, pariatur sit nisi.
+          Dolores, molestiae et! Voluptatem eum dolores eligendi magnam odio
+        </p>
+        <!-- Cards -->
+
+<section class="places">
+
+<h2 >PLANTS</h2>
+
+<div class="cards">
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1sldIiOPuYciKrspZ3VgfnTF05n7yRRo-xe6x1tmiKPhCTTpj6K88M_4&s?w=500" alt="">
+
+<h3>The Journey Begins</h3>
+
+<p>Every sunrise is a new chance to bloom</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScPMg_LIDCkWhu8hiXSAeta4MIu7C6bO7d5KlISAZ3xw&s=10?w=500" alt="">
+
+<h3>Growing Strong</h3>
+
+<p>Great things grow from small beginnings</p>
+
+</div>
+
+<div class="card">
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREzTwdwNx5fsVQo4z2_K1YptO99JLSeeKYExa7OdKfhg&s=10?w500" alt="">
+
+<h3>One Tree, One Future</h3>
+
+<p>Grow trees, grow life, grow hope</p>
+
+</div>
+      </div>
+    </div>
+  </body>
+</html>
